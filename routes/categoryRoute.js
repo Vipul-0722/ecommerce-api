@@ -90,7 +90,7 @@ router.post("/add-category", authMiddleware, async (req, res) => {
  *                   name: Example Category 2
  *                   description: Example description 2
  */
-router.get("/get-all-category", authMiddleware, async (req, res) => {
+router.get("/get-all-category", async (req, res) => {
   try {
     const categories = await Category.find({})
     res.status(200).json({
