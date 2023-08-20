@@ -1,6 +1,5 @@
 const mongoose = require("mongoose")
 
-// Set the strictQuery option to false to address the deprecation warning
 mongoose.set("strictQuery", false)
 
 mongoose

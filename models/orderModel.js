@@ -4,14 +4,14 @@ const orderSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User", // Assuming you have a User model
+      ref: "User",
       required: true,
     },
     products: [
       {
         product: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Product", // Assuming you have a Product model
+          ref: "Product",
           required: true,
         },
         quantity: {
@@ -22,7 +22,7 @@ const orderSchema = new mongoose.Schema(
     ],
     status: {
       type: String,
-      default: "Pending", // You can add more status options (e.g., 'Shipped', 'Delivered')
+      default: "Pending",
     },
   },
   {

@@ -23,10 +23,9 @@ const productSchema = new mongoose.Schema(
     },
     categoryId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Category", // Assuming you have a Category model
+      ref: "Category",
       required: true,
     },
-    // You can add more fields specific to products here
   },
   {
     timestamps: true,
