@@ -18,7 +18,7 @@ const options = {
       description: "API documentation for my e-commerce backend",
     },
   },
-  apis: ["./routes/*.js"], // Path to your route files
+  apis: ["./routes/*.js"],
 }
 
 const swaggerSpec = swaggerJSDoc(options)

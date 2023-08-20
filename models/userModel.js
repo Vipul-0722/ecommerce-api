@@ -37,5 +37,3 @@ const userModel = mongoose.model("users", userSchema)
 
 module.exports = userModel
 
-// const mongoose = require('mongoose');
-
